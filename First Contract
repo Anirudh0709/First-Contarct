@@ -1,0 +1,34 @@
+"Write a simple contract and declare four different types of variables. Write get and set functions for each of these variables. Return the value of the variable in the “set function”.
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract VariableExample {
+    uint public uintVar;
+    int public intVar;
+    bool public boolVar;
+    string public stringVar;
+    function setUintVar(uint256 _value) public {
+        uintVar = _value;
+    }
+    function getUintVar() public view returns (uint256) {
+        return uintVar;
+    }
+    function setIntVar(int256 _value) public {
+        intVar = _value;
+    }
+    function getIntVar() public view returns (int256) {
+        return intVar;
+    }
+    function setBoolVar(bool _value) public {
+        boolVar = _value;
+    }
+    function getBoolVar() public view returns (bool) {
+        return boolVar;
+    }
+    function setStringVar(string memory _value) public {
+        stringVar = _value;
+    }
+    function getStringVar() public view returns (string memory){
+        return stringVar;
+    }
+}
